@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/menu"
+        android:paddingStart="8dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/viewIfinit"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_all_inclusive_24" />
+
+        <ImageView
+            android:id="@+id/viewHappy"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_emoji_emotions_24" />
+
+        <ImageView
+            android:id="@+id/viewsunny"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_sunny_24" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ola"
+        android:layout_below="@+id/image"
+        android:layout_centerInParent="true"
+        android:layout_margin="32dp"
+        android:textStyle="bold"
+        android:textSize="32sp"/>
+
+    <TextView
+        android:id="@+id/motivation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="5dp"
+        android:layout_below="@+id/motivation"
+        android:layout_centerInParent="true"
+        android:layout_margin="32dp"
+        android:background="@color/menu"
+        android:elevation="5dp" />
+
+    <Button
+        android:id="@+id/button_novaFrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="90dp"
+        android:backgroundTint="@color/button"
+        android:text="@string/buton_nova_frase" />
+
+
+</RelativeLayout>

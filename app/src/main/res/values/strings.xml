@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Aplicativo Motivation</string>
+    <string name="motivation">O sucesso nasce do querer, da determinação e persistência em se chegar a um objetivo.</string>
+    <string name="buton_nova_frase">NOVA FRASE</string>
+    <string name="vamos">Vamos Começar?</string>
+    <string name="ola">Olá Kotlin!</string>
+</resources>
